@@ -1,0 +1,26 @@
+body { margin: 0; background: #000; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; user-select: none; }
+.hidden { display: none !important; }
+
+#menu-screen { position: fixed; width: 100%; height: 100%; background: #000; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 100; text-align: center; }
+#night-selection button { padding: 15px; margin: 10px; background: #111; border: 2px solid #fff; color: #fff; border-radius: 5px; }
+
+#game-container { display: flex; flex-direction: column; width: 100vw; height: 100vh; }
+#viewport { flex: 2; position: relative; background: #111; border-bottom: 3px solid #333; }
+#office { width: 100%; height: 100%; }
+
+.hotspot { position: absolute; background: rgba(255,255,255,0.03); border: 1px solid #222; padding: 12px; font-size: 10px; text-align: center; color: #555; }
+#corridor { top: 30%; left: 25%; width: 50%; height: 35%; }
+#duct-left { bottom: 5%; left: 5%; width: 20%; }
+#duct-right { bottom: 5%; right: 5%; width: 20%; }
+
+#camera-screen { position: absolute; top: 0; width: 100%; height: 100%; background: rgba(0, 15, 30, 0.85); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 5; }
+.mini-btn { padding: 8px 12px; font-size: 10px; background: #222; color: #0f0; border: 1px solid #0f0; margin: 5px; border-radius: 3px; }
+
+#ui-panel { flex: 1; background: #050505; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+#stats { text-align: center; font-size: 14px; color: #ccc; }
+#controls { display: flex; gap: 8px; height: 55px; }
+#controls button { flex: 1; background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; font-size: 11px; }
+#cam-menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+#cam-menu button { padding: 10px; background: #111; color: #888; border: 1px solid #333; font-size: 10px; }
+
+.mask-active { border: 45px solid #000 !important; filter: brightness(0.4); }
