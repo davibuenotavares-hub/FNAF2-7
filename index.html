@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FNAF 2 Mobile - Caminho Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-screen">
+        <h1>FNAF 2 HTML5</h1>
+        <div id="night-selection">
+            <button onclick="startGame(1)">NOITE 1</button>
+            <button onclick="startGame(2)">NOITE 2</button>
+            <button onclick="startGame(3)">NOITE 3</button>
+        </div>
+        <div id="tutorial">
+            <p><strong>DICA:</strong> Monitore o caminho dos animatrônicos pelas câmeras antes que cheguem aos dutos!</p>
+        </div>
+    </div>
+
+    <div id="game-container" class="hidden">
+        <div id="viewport">
+            <div id="office">
+                <div id="corridor" class="hotspot">CORREDOR</div>
+                <div id="duct-left" class="hotspot">DUTO ESQ.</div>
+                <div id="duct-right" class="hotspot">DUTO DIR.</div>
+            </div>
+            
+            <div id="camera-screen" class="hidden">
+                <div id="cam-info">
+                    <span id="cam-label">CAM 11</span><br>
+                    <span id="anim-detected" style="color: #00ff00; font-size: 11px;"></span>
+                </div>
+                <div id="cam-actions">
+                    <button id="rewind-btn" class="mini-btn">REBOBINAR</button>
+                    <button id="audio-btn" class="mini-btn">PLAY ÁUDIO</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ui-panel">
+            <div id="stats">
+                <span id="hour-val">12</span> AM | 
+                BAT: <span id="bat-val">100</span>% |
+                CAIXA: <span id="music-val">100</span>%
+            </div>
+            <div id="controls">
+                <button id="mask-toggle">MÁSCARA</button>
+                <button id="cam-toggle">CÂMERAS</button>
+                <button id="flash-btn">LANTERNA</button>
+            </div>
+            <div id="cam-menu" class="hidden">
+                <button onclick="changeCam(1)">CAM 01</button>
+                <button onclick="changeCam(2)">CAM 02</button>
+                <button onclick="changeCam(3)">CAM 03</button>
+                <button onclick="changeCam(4)">CAM 04</button>
+                <button onclick="changeCam(11)">CAM 11</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
